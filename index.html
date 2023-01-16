@@ -1,1 +1,317 @@
-hi :)
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Progress<3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        height: 100vh;
+        font-family: "Quicksand", sans-serif;
+        margin: 50px;
+      }
+
+      .progress {
+        height: 30px;
+        width: 100%;
+        background-color: lightgray;
+        border-radius: 10px;
+      }
+
+      .progressy {
+        height: 100%;
+        width: 0;
+        opacity: 0;
+        background: linear-gradient(to left, #b2ac88, #b2ac88);
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 3px 3px -5px #b2ac88, 0 2px 5px #b2ac88;
+        transition: 1s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>For that special someone <3</h1>
+    <br />
+    <h2>AS Progress</h2>
+    <br />
+    <h3>Pure Mathematics 1 • Papers • 1/40</h3>
+    <div class="progress">
+      <div id="one" class="progressy" completed="1" total="40"></div>
+    </div>
+    <h3>Pure Mathematics 2 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="two" class="progressy" completed="0" total="40"></div>
+    </div>
+    <h3>Statistics 1 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="three" class="progressy" completed="0" total="40"></div>
+    </div>
+    <h3>Mechanics 1 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="four" class="progressy" completed="0" total="40"></div>
+    </div>
+    <br /><br />
+    <h3>Physics Unit 1 • Chapters • 0/5</h3>
+    <div class="progress">
+      <div id="five" class="progressy" completed="0" total="5"></div>
+    </div>
+    <h3>Physics Unit 1 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="six" class="progressy" completed="0" total="40"></div>
+    </div>
+    <h3>Physics Unit 2 • Chapters • 0/6</h3>
+    <div class="progress">
+      <div id="seven" class="progressy" completed="0" total="6"></div>
+    </div>
+    <h3>Physics Unit 2 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="eight" class="progressy" completed="0" total="40"></div>
+    </div>
+    <h3>Physics Unit 3 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="nine" class="progressy" completed="0" total="40"></div>
+    </div>
+    <br /><br />
+    <h3>Chemistry Unit 1 • Chapters • 0/16</h3>
+    <div class="progress">
+      <div id="ten" class="progressy" completed="0" total="16"></div>
+    </div>
+    <h3>Chemistry Unit 1 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="eleven" class="progressy" completed="0" total="40"></div>
+    </div>
+    <h3>Chemistry Unit 2 • Chapters • 0/19</h3>
+    <div class="progress">
+      <div id="twelve" class="progressy" completed="0" total="19"></div>
+    </div>
+    <h3>Chemistry Unit 2 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="thirteen" class="progressy" completed="0" total="40"></div>
+    </div>
+    <h3>Chemistry Unit 3 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="fourteen" class="progressy" completed="0" total="40"></div>
+    </div>
+    <br /><br />
+    <h3>Biology Unit 1 • Chapters • 0/6</h3>
+    <div class="progress">
+      <div id="fifteen" class="progressy" completed="0" total="6"></div>
+    </div>
+    <h3>Biology Unit 1 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="sixteen" class="progressy" completed="0" total="40"></div>
+    </div>
+    <h3>Biology Unit 2 • Chapters • 0/6</h3>
+    <div class="progress">
+      <div id="seventeen" class="progressy" completed="0" total="6"></div>
+    </div>
+    <h3>Biology Unit 2 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="eighteen" class="progressy" completed="0" total="40"></div>
+    </div>
+    <h3>Biology Unit 3 • Papers • 0/40</h3>
+    <div class="progress">
+      <div id="nineteen" class="progressy" completed="0" total="40"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <script>
+      // one one one one one one one one one one one
+      const one = document.getElementById("one");
+      setTimeout(() => {
+        one.getAttribute("completed");
+        one.style.opacity = 1;
+        const cone = one.getAttribute("completed");
+        const tone = one.getAttribute("total");
+        one.style.width = (cone * 100) / tone + "%";
+      }, 500);
+
+      // two two two two two two two two two two two
+      const two = document.getElementById("two");
+      setTimeout(() => {
+        two.getAttribute("completed");
+        two.style.opacity = 1;
+        const cTwo = two.getAttribute("completed");
+        const tTwo = two.getAttribute("total");
+        two.style.width = (cTwo * 100) / tTwo + "%";
+      }, 500);
+
+      // three three three three three three three three
+      const three = document.getElementById("three");
+      setTimeout(() => {
+        three.getAttribute("completed");
+        three.style.opacity = 1;
+        const cthree = three.getAttribute("completed");
+        const tthree = three.getAttribute("total");
+        three.style.width = (cthree * 100) / tthree + "%";
+      }, 500);
+
+      // four four four four four four four four four four
+      const four = document.getElementById("four");
+      setTimeout(() => {
+        four.getAttribute("completed");
+        four.style.opacity = 1;
+        const cfour = four.getAttribute("completed");
+        const tfour = four.getAttribute("total");
+        four.style.width = (cfour * 100) / tfour + "%";
+      }, 500);
+
+      // five five five five five five five five five five
+      const five = document.getElementById("five");
+      setTimeout(() => {
+        five.getAttribute("completed");
+        five.style.opacity = 1;
+        const cfive = five.getAttribute("completed");
+        const tfive = five.getAttribute("total");
+        five.style.width = (cfive * 100) / tfive + "%";
+      }, 500);
+
+      // six six six six six six six six six six six
+      const six = document.getElementById("six");
+      setTimeout(() => {
+        six.getAttribute("completed");
+        six.style.opacity = 1;
+        const csix = six.getAttribute("completed");
+        const tsix = six.getAttribute("total");
+        six.style.width = (csix * 100) / tsix + "%";
+      }, 500);
+
+      // seven seven seven seven seven seven seven seven
+      const seven = document.getElementById("seven");
+      setTimeout(() => {
+        seven.getAttribute("completed");
+        seven.style.opacity = 1;
+        const cseven = seven.getAttribute("completed");
+        const tseven = seven.getAttribute("total");
+        seven.style.width = (cseven * 100) / tseven + "%";
+      }, 500);
+
+      // eight eight eight eight eight eight eight eight eight
+      const eight = document.getElementById("eight");
+      setTimeout(() => {
+        eight.getAttribute("completed");
+        eight.style.opacity = 1;
+        const ceight = eight.getAttribute("completed");
+        const teight = eight.getAttribute("total");
+        eight.style.width = (ceight * 100) / teight + "%";
+      }, 500);
+
+      // nine nine nine nine nine nine nine nine nine nine
+      const nine = document.getElementById("nine");
+      setTimeout(() => {
+        nine.getAttribute("completed");
+        nine.style.opacity = 1;
+        const cnine = nine.getAttribute("completed");
+        const tnine = nine.getAttribute("total");
+        nine.style.width = (cnine * 100) / tnine + "%";
+      }, 500);
+
+      // ten ten ten ten ten ten ten ten ten ten ten
+      const ten = document.getElementById("ten");
+      setTimeout(() => {
+        ten.getAttribute("completed");
+        ten.style.opacity = 1;
+        const cten = ten.getAttribute("completed");
+        const tten = ten.getAttribute("total");
+        ten.style.width = (cten * 100) / tten + "%";
+      }, 500);
+
+      // eleven eleven eleven eleven eleven eleven eleven eleven
+      const eleven = document.getElementById("eleven");
+      setTimeout(() => {
+        eleven.getAttribute("completed");
+        eleven.style.opacity = 1;
+        const celeven = eleven.getAttribute("completed");
+        const televen = eleven.getAttribute("total");
+        eleven.style.width = (celeven * 100) / televen + "%";
+      }, 500);
+
+      // twelve twelve twelve twelve twelve twelve twelve twelve
+      const twelve = document.getElementById("twelve");
+      setTimeout(() => {
+        twelve.getAttribute("completed");
+        twelve.style.opacity = 1;
+        const ctwelve = twelve.getAttribute("completed");
+        const ttwelve = twelve.getAttribute("total");
+        twelve.style.width = (ctwelve * 100) / ttwelve + "%";
+      }, 500);
+
+      // thirteen thirteen thirteen thirteen thirteen thirteen
+      const thirteen = document.getElementById("thirteen");
+      setTimeout(() => {
+        thirteen.getAttribute("completed");
+        thirteen.style.opacity = 1;
+        const cthirteen = thirteen.getAttribute("completed");
+        const tthirteen = thirteen.getAttribute("total");
+        thirteen.style.width = (cthirteen * 100) / tthirteen + "%";
+      }, 500);
+
+      // fourteen fourteen fourteen fourteen fourteen fourteen
+      const fourteen = document.getElementById("fourteen");
+      setTimeout(() => {
+        fourteen.getAttribute("completed");
+        fourteen.style.opacity = 1;
+        const cfourteen = fourteen.getAttribute("completed");
+        const tfourteen = fourteen.getAttribute("total");
+        fourteen.style.width = (cfourteen * 100) / tfourteen + "%";
+      }, 500);
+
+      // fifteen fifteen fifteen fifteen fifteen fifteen fifteen
+      const fifteen = document.getElementById("fifteen");
+      setTimeout(() => {
+        fifteen.getAttribute("completed");
+        fifteen.style.opacity = 1;
+        const cfifteen = fifteen.getAttribute("completed");
+        const tfifteen = fifteen.getAttribute("total");
+        fifteen.style.width = (cfifteen * 100) / tfifteen + "%";
+      }, 500);
+
+      // sixteen sixteen sixteen sixteen sixteen sixteen sixteen
+      const sixteen = document.getElementById("sixteen");
+      setTimeout(() => {
+        sixteen.getAttribute("completed");
+        sixteen.style.opacity = 1;
+        const csixteen = sixteen.getAttribute("completed");
+        const tsixteen = sixteen.getAttribute("total");
+        sixteen.style.width = (csixteen * 100) / tsixteen + "%";
+      }, 500);
+
+      // seventeen seventeen seventeen seventeen seventeen seventeen
+      const seventeen = document.getElementById("seventeen");
+      setTimeout(() => {
+        seventeen.getAttribute("completed");
+        seventeen.style.opacity = 1;
+        const cseventeen = seventeen.getAttribute("completed");
+        const tseventeen = seventeen.getAttribute("total");
+        seventeen.style.width = (cseventeen * 100) / tseventeen + "%";
+      }, 500);
+
+      // eighteen eighteen eighteen eighteen eighteen eighteen
+      const eighteen = document.getElementById("eighteen");
+      setTimeout(() => {
+        eighteen.getAttribute("completed");
+        eighteen.style.opacity = 1;
+        const ceighteen = eighteen.getAttribute("completed");
+        const teighteen = eighteen.getAttribute("total");
+        eighteen.style.width = (ceighteen * 100) / teighteen + "%";
+      }, 500);
+
+      // nineteen nineteen nineteen nineteen nineteen nineteen
+      const nineteen = document.getElementById("nineteen");
+      setTimeout(() => {
+        nineteen.getAttribute("completed");
+        nineteen.style.opacity = 1;
+        const cnineteen = nineteen.getAttribute("completed");
+        const tnineteen = nineteen.getAttribute("total");
+        nineteen.style.width = (cnineteen * 100) / tnineteen + "%";
+      }, 500);
+    </script>
+  </body>
+</html>
