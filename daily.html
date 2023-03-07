@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>Daily Completions <3</title>
+    <meta name="title" content="Progress <3" />
+    <meta name="description" content="Progress <3" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://azw4d.github.io/" />
+    <meta property="og:title" content="Progress <3" />
+    <meta property="og:description" content="Progress <3" />
+    <!--meta property="og:image" content="https://raw.githubusercontent.com/azw4d/azw4d.github.io/main/icon.png"-->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://azw4d.github.io/" />
+    <meta property="twitter:title" content="Progress <3" />
+    <meta property="twitter:description" content="Progress <3" />
+    <!--meta property="twitter:image" content="https://raw.githubusercontent.com/azw4d/azw4d.github.io/main/icon.png"-->
+
+    <!-- Rest -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link
+      rel="icon"
+      href="https://raw.githubusercontent.com/azw4d/azw4d.github.io/main/icon.png"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        height: 100vh;
+        font-family: "Quicksand", sans-serif;
+        margin: 50px;
+      }
+
+      a:link {
+        text-decoration: none;
+        color: #000;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: #000;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: #000;
+      }
+
+      a:active {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .progress {
+        height: 30px;
+        width: 100%;
+        background-color: lightgray;
+        border-radius: 15px;
+      }
+
+      .progressy {
+        height: 100%;
+        width: 0;
+        opacity: 0;
+        background: linear-gradient(to left, #b2ac88, #b2ac88);
+        color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 3px 3px -5px #b2ac88, 0 2px 5px #b2ac88;
+        transition: 1s ease;
+      }
+
+      h6 {
+        font-size: 0.3vw;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>For that special someone <3</h1>
+    <h2>Daily Completions</h2>
+    <br />
+    <h3>Total AS Progress</h3>
+    <div class="progress">
+      <div id="progress" class="progressy" completed="5" total="90"></div>
+    </div>
+    <br />
+    <h4>7th March, 2023</h4>
+    <h4></h4>
+    <br />
+    <br />
+    <script>
+      const one = document.getElementById("progress");
+      setTimeout(() => {
+        one.getAttribute("completed");
+        one.style.opacity = 1;
+        const cone = one.getAttribute("completed");
+        const tone = one.getAttribute("total");
+        one.style.width = (cone * 100) / tone + "%";
+      }, 500);
+    </script>
+  </body>
+</html>
